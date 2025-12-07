@@ -1,1 +1,36 @@
+:root{
+  --bg:#f7f7f9;
+  --card:#ffffff;
+  --accent:#1f6feb;
+  --muted:#666;
+}
 
+body{
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  margin: 0;
+  padding: 24px;
+  color:#111;
+}
+
+.container{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+h1{ margin: 0 0 12px 0 }
+.controls{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-bottom:16px;
+}
+label{ font-size:14px; color:var(--muted) }
+canvas{ display:block; background: #fff; border:1px solid #ddd; margin-bottom:18px; }
+button{
+  padding:8px 12px;
+  border-radius:6px;
+  border:1px solid #ccc;
+  background: white;
+  cursor:pointer;
+}
