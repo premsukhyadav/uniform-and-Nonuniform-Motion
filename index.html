@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Uniform vs Non-Uniform Motion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Uniform vs Non-Uniform Motion</h1>
+
+    <section class="controls">
+      <button id="startBtn">Start</button>
+      <button id="resetBtn">Reset</button>
+      <label>Duration (s): <input id="tMax" type="number" value="12" min="1"></label>
+      <label>dt (s): <input id="dt" type="number" value="0.05" step="0.01" min="0.01"></label>
+    </section>
+
+    <section>
+      <h2>Animation</h2>
+      <canvas id="simCanvas" width="900" height="140" aria-label="Animation canvas"></canvas>
+    </section>
+
+    <section>
+      <h2>Position vs Time</h2>
+      <canvas id="posGraph" width="900" height="300"></canvas>
+    </section>
+
+    <section>
+      <h2>Velocity vs Time</h2>
+      <canvas id="velGraph" width="900" height="300"></canvas>
+    </section>
+
+    <footer>
+      <p>Blue = Uniform (constant velocity). Red = Non-uniform (variable acceleration).</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
